@@ -47,4 +47,7 @@ parser/sdp.c \
 parser/smp.c \
 parser/tcpip.c
 
+LOCAL_CFLAGS    += -fPIE
+LOCAL_LDFLAGS   += -fPIE -pie
+
 include $(BUILD_EXECUTABLE)
